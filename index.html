@@ -9,14 +9,15 @@
 
 </head>
 <body>
-		<script type="javascript">
+		<script >
 		var r=	Math.floor((Math.random() * 255) + 1);
         var g=	Math.floor((Math.random() * 255) + 1);
         var b=	Math.floor((Math.random() * 255) + 1);
+        $(document).ready(function() {
         $("#backbtn").on('click', function(){
             $("body").css("background-color","rgb(r,g,b)");
 
-        });
+        });  } );
 		</script>
 	<form>
 		<button id="backbtn">
